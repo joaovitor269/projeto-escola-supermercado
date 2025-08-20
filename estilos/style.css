@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /*background: linear-gradient(500deg, rgb(152, 185, 152), rgb(15, 83, 94));*/
+    background-image: linear-gradient(to top, rgb(44, 155, 206), rgb(0, 0, 0));
+}
+
+header { 
+    background-image: linear-gradient(to bottom, rgb(83, 226, 159), #2b2828); 
+    padding: 40px 0px 40px 0px;
+    color: white; 
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+    font-size: 2.7em;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+div.flex-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > div.flex-header > p {
+    padding: 5px;
+    color: white;
+    font-size: 1.4em;
+    max-width: 510px;
+    text-align: center;
+    margin: 30px 10px 0px 10px;
+}
+
+span.material-symbols-outlined {
+    transform: translateY(5px);
+    font-size: 1.1em;
+}
+
+main {
+    margin: 0px 10px 0px 10px;
+}
+
+div.flex-tit {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.flex-tit > div > h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.4em;
+    font-family: "Mozilla Headline", sans-serif;
+    margin: 0px auto 30px;
+    padding: 15px;
+}
+
+div.flex-tit > div.btn-compre {
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+}
+
+div.flex-tit > div.btn-compre > button {
+    padding: 15px 45px 15px 45px;
+    background-color: rgb(42, 173, 42);
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3em;
+    border: 0;
+    border-radius: 10px;
+}
+
+div.flex-tit > div.btn-compre > button:hover {
+    transform: translate(-2px, -1px);
+    background-color: rgb(192, 166, 19);
+    color: black;
+}
+
+div.flex-cards {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+a.principal {
+    width: 99%;
+    z-index: 2;
+    opacity: 0.95;
+    height: 230px;
+    border-radius: 5px;
+    margin: 15px 0px 15px 0px;
+    padding: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+}
+
+a#frutas {
+    background-image: url(../imagens/img-oferta-produtos/ofertas-hortifruti-mobile-600x400.png);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    border-radius: 25px; 
+    transition: background-image 0.3s ease;
+}
+
+ a#frutas:hover {
+    background-image: url(../imagens/horti-fruti/fundo-hortifruti.jpg);
+    background-position: center;
+}
+
+a#mercearia {
+    background-image: url(../imagens/img-oferta-produtos/ofertas-mercearia-mobile-600x400.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transition: background-image 0.3s ease;
+}
+
+a#mercearia:hover {
+    background-image: url(../imagens/mercearia/fundo-mercearia.jpg);
+}
+
+a#higiene {
+    background-image: url(../imagens/img-oferta-produtos/ofertas-higiene-mobile-600x400.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: background-image 0.3s ease;
+}
+
+a#higiene:hover {
+    background-image: url(../imagens/higiene-pessoal/fundo-higiene.avif);
+    background-position: left top;
+}
+
+a#bebidas {
+    background-image: url(../imagens/img-oferta-produtos/ofertas-bebidas-mobile-700x400.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center;
+    border-radius: 25px;
+    transition: background-image 0.3s ease;
+}
+
+a#bebidas:hover {
+    background-image: url(../imagens/bebidas/foto-fundo-bebidas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+div.img-produtos > img {
+    border-radius: 10px;
+    width: 400px;
+    height: 235px;
+    display: block;
+}
+
+footer {
+    font-size: 1.5em;
+    color: white;
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 610px)  { /* PC / Tablet */
+
+
+    div.flex-header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    div.flex-tit {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    } 
+
+    div.flex-tit > div > h2 {
+        margin: 0;
+        font-size: 2.8em;
+        padding: 10px;
+    }
+
+    div.flex-tit > div.btn-compre {
+        margin: 20px 10px 0px 10px;
+}
+
+    div.flex-cards {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    a.principal {
+        width: 270px;
+        height: 450px;
+        padding: 50px;
+        margin: 5px 12px 10px 12px;
+    }
+
+    a#frutas {
+        background-image: url(../imagens/img-oferta-produtos/ofertas-hortifruti-pc-300x500.png);
+    }
+
+    a#mercearia {
+        background-image: url(../imagens/img-oferta-produtos/ofertas-mercearia-pc-300x500.png);
+    }
+
+    a#higiene {
+        background-image: url(../imagens/img-oferta-produtos/ofertas-higiene-pc-300x500.png);
+    }
+
+    a#bebidas {
+        background-image: url(../imagens/img-oferta-produtos/ofertas-bebidas-pc-300x500.png);
+    }
+}
+
